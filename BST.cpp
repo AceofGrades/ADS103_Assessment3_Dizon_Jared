@@ -120,29 +120,44 @@ void BST::postOrderTraversal(Node* current)
     }
 }
 
-void BST::levelOrderTraversal(struct Node* root)
+void BST::show(Node* p)
 {
-    if (!root)
-        return;
-
-    // queue to hold tree node with level
-    queue<pair<struct Node*, int> > q;
-
-    q.push({ root, 0 }); // let root node be at level 0
-
-    pair<struct Node*, int> p;
-
-    // Do level Order Traversal of tree
-    while (!q.empty())
+    // Base case
+    if (root == NULL)
     {
-        p = q.front();
+        return;
+    }
+
+    // Create empty queue for level order traversal
+    queue<LevelNode> q;
+
+    // Enqueue root and initialise height
+    q.push(LevelNode(root, 0));
+    int previousOutputLevel = -1;
+
+    while (q.empty() == false)
+    {
+        // Print front of queue and remove from queue
+        LevelNode node = q.front();
+        if (node.level != previousOutputLevel)
+        {
+            cout << endl;
+            cout << node.level << ": ";
+            previousOutputLevel = node.level;
+        }
+        cout << node.node->number<<" ";
         q.pop();
 
-        cout << p.second << ": " << p.first->number << endl;
+        // Enqueue left child
+        if (node.node->leftChild != NULL)
+        {
+            q.push(LevelNode(node.node->leftChild, node.level + 1));
+        }
 
-        if (p.first->leftChild)
-            q.push({ p.first->leftChild, p.second + 1 });
-        if (p.first->rightChild)
-            q.push({ p.first->rightChild, p.second + 1 });
+        // Enqueue right child
+        if (node.node->rightChild != NULL)
+        {
+            q.push(LevelNode(node.node->rightChild, node.level + 1));
+        }
     }
 }

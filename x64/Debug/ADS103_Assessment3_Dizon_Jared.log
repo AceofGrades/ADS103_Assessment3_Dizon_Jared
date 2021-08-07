@@ -1,7 +1,7 @@
-﻿  AVL.cpp
+﻿  BinaryMinHeap.cpp
+C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\BinaryMinHeap.cpp(97,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\BinaryMinHeap.cpp(144,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   main.cpp
-C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\main.cpp(9,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\main.cpp(10,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Generating Code...
-C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\AVL.cpp(20): warning C4715: 'AVL::height': not all control paths return a value
-C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\AVL.cpp(149): warning C4715: 'AVL::insertAVL': not all control paths return a value
   ADS103_Assessment3_Dizon_Jared.vcxproj -> C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\x64\Debug\ADS103_Assessment3_Dizon_Jared.exe

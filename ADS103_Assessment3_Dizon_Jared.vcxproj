@@ -140,12 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AVL.cpp" />
+    <ClCompile Include="BinaryMinHeap.cpp" />
     <ClCompile Include="BST.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Node.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AVL.h" />
+    <ClInclude Include="BinaryMinHeap.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>

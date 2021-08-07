@@ -1,6 +1,4 @@
-﻿  BinaryMinHeap.cpp
-C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\BinaryMinHeap.cpp(97,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\BinaryMinHeap.cpp(144,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+﻿  BST.cpp
   main.cpp
 C:\Users\Rolly\Desktop\ADS103_Assessment3_Dizon_Jared\main.cpp(10,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Generating Code...
